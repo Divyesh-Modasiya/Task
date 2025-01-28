@@ -12,6 +12,9 @@ let Data = mongoose.Schema({
     },
     intrest:{
         type:String
+    },
+    image:{
+        type:String
     }
 })
 const AdminData = mongoose.model("TaskData",Data)

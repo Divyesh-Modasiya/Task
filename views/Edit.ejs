@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1><%=data.username%></h1>
+    <form action="/update" method="post">
+        <input type="text" name="id" value="<%=data.id%>" hidden>
+        <input type="text" placeholder="UserName" name="username" value="<%=data.username%>">
+        <input type="text" placeholder="Principleamount" name="principleamount" value="<%=data.principleamount%>">
+        <input type="text" placeholder="Month" name="month" value="<%=data.month%>">
+        <input type="text" placeholder="Intrest" name="intrest" value="<%=data.intrest%>">
+        <input type="file" name="image" value="<%=data.image%>">
+
+        <button type="submit">Update</button>
+    </form>
+
+
+</body>
+</html>
